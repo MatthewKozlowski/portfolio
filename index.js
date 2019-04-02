@@ -1,4 +1,4 @@
-function goToBio() {
+/*function goToBio() {
     $('#menu').on('click', '#bio', function(){
         $('#menu').remove();
         $('main').append(`
@@ -41,3 +41,4 @@ function goToResume() {
 goToBio();
 goToProjects();
 goToResume();
+*/

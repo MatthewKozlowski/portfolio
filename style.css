@@ -12,6 +12,7 @@ nav {
     left: 0;
     padding-top: 24px;
     padding-right: 15px;
+    z-index: 99;
 }
 
 .links {
@@ -39,6 +40,7 @@ a:visited {
 
 main {
     display: flexbox;
+    margin-bottom: 100px;
 }
 
 img {
@@ -133,40 +135,58 @@ footer {
     color: #A4F1FF;
     bottom: 0;
     left: 0;
+    margin-top: 10px;
 }
 
-.menuContainers {
+#bioContainer {
     font-family: 'Crimson Text', serif;
     color: #A4F1FF;
     font-size: 20px;
     background-color: #CC7E6F;
     margin: auto;
-    margin-top: 20px;
-    width: 500px;
+    margin-top: 20px;   
+    width: 600px;
     border-radius: 7.5px;
     border: solid 1px black;
-    height: 150px;
+    height: 400px;
 }
 
-#bioListConatiner_1 {
+#projectContainer {
+    font-family: 'Crimson Text', serif;
+    color: #A4F1FF;
+    font-size: 20px;
+    background-color: #CC7E6F;
+    margin: auto;
+    margin-top: 20px;   
+    width: 600px;
+    border-radius: 7.5px;
+    border: solid 1px black;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+#projectContainer p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titles {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#bioListConatiner {
     display: inline-block;
+    margin-bottom: 50px;
+    height: 25px;
+    text-align: center;
 }
 
-#bioListConatiner_2 {
-    display: inline-block;
+p span {
+    padding-left: 50px;
+    padding-right: 50px;
 }
-
-.bioLists {
-    list-style-type: none;
-    
-    
-}
-
-.bioListItems {
-    
-    
-}
-
 @media screen and (max-width: 600px) {
     
     nav {

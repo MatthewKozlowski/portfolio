@@ -1,10 +1,10 @@
 body {
-    background-color: #5C677F
+    background-color: #E6FFEE;
 }
 
 nav {
     position: fixed;
-    background-color: #CC7E6F;
+    background-color: #7DB390;
     text-align: right;
     height: 50px;
     top: 0;
@@ -18,10 +18,19 @@ nav {
 .links {
     display: inline;
     font-family: 'Julius Sans One', sans-serif;
-    color: #A4F1FF; 
+    color: black; 
     font-weight: bold;
     font-size: 20px;
     padding-right: 15px;
+}
+
+.home:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 a {
@@ -31,7 +40,7 @@ a {
 }
 
 a:hover {
-    color: #5C677F
+    color: #FFFFFF;
 }
 
 a:visited {
@@ -39,21 +48,20 @@ a:visited {
 }
 
 main {
-    display: flexbox;
     margin-bottom: 100px;
+    flex-direction: row;
 }
 
 img {
-    display: block;
+   
     height: 20%;
     width: 20%;
-    transform: rotate(270deg);
-    margin-top: 165px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
     margin-bottom: 75px;
-    border-radius: 20px;
+    margin-left: 110px;
+    border-radius: 50%;
     border: solid 1px;
+    margin-right: 110px;
 }
 
 ul {
@@ -63,63 +71,66 @@ ul {
 }
 
 #hero {
-    display: block;
-    color: #A4F1FF;
     text-align: center;
-    background-color: #CC7E6F;
+    background-color: #7DB390;
     border: solid 1px black;
-    margin: auto;
     width:500px;
     height: 150px;
-    border-radius: 7.5px;
+    border-radius: 10px 30px 10px 30px;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 110px;
+    margin-left: 100px;
+    background-clip: padding-box;
 }
 
 #headline {
     font-family: 'Julius Sans One', sans-serif;
-    color: #A4F1FF;
+    color: black;
     text-align: center;
-    background-color: #CC7E6F;
     font-size: 40px;
     padding: 27px 0px 10px 10px;
-    border: none;
     margin: auto;
-    border-radius: 7.5px;
+    
    
 }
 
 #subtitle {
     font-family: 'Crimson Text', serif;
     font-weight: normal;
+    color: #FFFFFF;
     font-size: 30px;
     margin-top: 0;
     padding-bottom: 10px;
     margin-bottom: 50px;
 }
 
-#menu {
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    color: #A4F1FF;
-    font-size: 20px;
-    background-color: #CC7E6F;
-    margin: auto;
-    margin-top: 20px;
-    width: 500px;
-    border-radius: 7.5px;
-    border: solid 1px black;
-    cursor: pointer;
-    height: 150px;
+#menuContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .menuItems {
-    padding-top: 5px;
-    margin: 0;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background-color: #7DB390;
+    color: black;
+}
+
+.menuLinks {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+    padding-top: 93px;
 }
 
 .menuItems:hover {
-    color: #5C677F 
+     color: #FFFFFF;
+     cursor: pointer;
+     border: white solid 1px;
 }
 
 #resume {
@@ -128,47 +139,15 @@ ul {
 
 footer {
     text-align: center;
-    background-color: #CC7E6F;
+    background-color: #7DB390;
     height: 50px;
     position: fixed;
     width: 100%;
-    color: #A4F1FF;
     bottom: 0;
     left: 0;
     margin-top: 10px;
 }
 
-#bioContainer {
-    font-family: 'Crimson Text', serif;
-    color: #A4F1FF;
-    font-size: 20px;
-    background-color: #CC7E6F;
-    margin: auto;
-    margin-top: 20px;   
-    width: 600px;
-    border-radius: 7.5px;
-    border: solid 1px black;
-    height: 400px;
-}
-
-#projectContainer {
-    font-family: 'Crimson Text', serif;
-    color: #A4F1FF;
-    font-size: 20px;
-    background-color: #CC7E6F;
-    margin: auto;
-    margin-top: 20px;   
-    width: 600px;
-    border-radius: 7.5px;
-    border: solid 1px black;
-    height: 400px;
-    margin-bottom: 20px;
-}
-
-#projectContainer p {
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .titles {
     text-align: center;
@@ -176,17 +155,58 @@ footer {
     margin-bottom: 0px;
 }
 
-#bioListConatiner {
-    display: inline-block;
-    margin-bottom: 50px;
-    height: 25px;
-    text-align: center;
-}
+
 
 p span {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/*Begin Bio Page Styling*/
+
+#bioContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bioItems {
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    margin: 75px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background-color: #7DB390;
+    color: black;
+}
+
+.bioInfoTitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+    padding-top: 15px;
+    color: white;
+}
+
+#backgroundText {
+    width: 350px;
+    padding-left: 50px;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+.worksWithList {
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+}
+.interestsList {
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+}
+
+
 @media screen and (max-width: 600px) {
     
     nav {

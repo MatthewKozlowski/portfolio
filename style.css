@@ -206,6 +206,45 @@ p span {
     font-size: 35px;
 }
 
+/* Begin Project Page Styling */
+
+#projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projectItems {
+    text-align: center;
+    width: 450px;
+    height: 450px;
+    margin: 75px;
+    border: black solid 1px;
+    border-radius: 50%;
+    background-color: #7DB390;
+    color: black;
+}
+
+.projectInfoTitle {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+    padding-top: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.projectLists {
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    text-align: left;
+    width: 350px;
+    padding-left: 55px;
+    font-size: 18px;
+}
+
+.projectLists a {
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 600px) {
     
